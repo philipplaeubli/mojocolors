@@ -18,10 +18,9 @@
 	<target name="release">
 			<input addproperty="version" message="give the zip a name" defaultvalue="v"/>	
 			<zip destfile="${project.release}/mojocolors-${version}.zip">
-				<zipfileset dir="${project.src}" >
-					
-				</zipfileset>
+				<zipfileset dir="${project.src}" prefix="source" ></zipfileset>
 				<zipfileset file="../LICENSE.txt"></zipfileset>
+				<zipfileset dir="${project.doc}" prefix="asdoc"></zipfileset>
 			</zip>
 	</target>
 </project>

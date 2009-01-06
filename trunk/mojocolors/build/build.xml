@@ -21,6 +21,7 @@
 				<zipfileset dir="${project.src}" prefix="source" ></zipfileset>
 				<zipfileset file="../LICENSE.txt"></zipfileset>
 				<zipfileset dir="${project.doc}" prefix="asdoc"></zipfileset>
+				<zipfileset dir="${project.demos}" prefix="demos"></zipfileset>
 			</zip>
 	</target>
 </project>

@@ -16,8 +16,10 @@
 		</exec>
 	</target>
 	<target name="release">
-		<input addproperty="version" message="give the zip a name" defaultvalue="v" />
-		<zip destfile="${project.release}/mojocolors-${version}.zip">
+		<buildnumber file="../release/build.number"/>
+		<input addproperty="codename" message="give this release a codename" defaultvalue="preview" />
+
+		<zip destfile="${project.release}/mojocolors-0.0.${build.number}(${codename}).zip">
 			<zipfileset dir="${project.src}" prefix="source">
 			</zipfileset>
 			<zipfileset file="../LICENSE.txt">

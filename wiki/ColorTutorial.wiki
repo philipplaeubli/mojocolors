@@ -4,14 +4,9 @@
 = Colors =
 When using the mojocolors Color object, you can dynamically generate colors and modify them and apply some color theory to them. this helps you building nicer applications, because you can easily create multiple shades of one color with one line of code.
 
-In this tutorial we create a swf that contains ten rectangle, each filled with a variation of an initial color. the rectangles interact on the mouse events and change their color. they differ in their height depending upon their brightness.
+In this tutorial we create a swf that contains ten rectangle, each filled with a variation of an initial color. the rectangles interact on the mouse events and change their color. 
 
 See the final swf [http://badmojo.ch/mojocolors/examples/001/001Color.html here]
+http://farm4.static.flickr.com/3413/3205697659_125ee5c019_m.jpg
 
-
-===Step One ===
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+===Step One - Your Main Class ===

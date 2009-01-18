@@ -48,3 +48,28 @@ mojocolors can help you. In this tutorial you will learn how to create a gradien
 	}
 
 }}}
+
+=== The Result ===
+http://farm4.static.flickr.com/3078/3206267732_4aba3de7af_o.jpg
+
+=== More ===
+{{{	
+//              when you create a ColorWheel with the gradientTo method, all
+//              colors are sorted. you can mix your ColorWheel by
+//              calling shuffle():
+		gradient.shuffle();
+		var theX : Number =  250;
+		for (var k : int = 0;k < gradient.length(); k++) {
+	
+//                      get the current color
+			currentColor = gradient.getColor();
+
+//	        	draw the bars again with a offset.
+			this.graphics.beginFill(currentColor.getHex());
+			var random : Number = Math.random()*30;
+			this.graphics.drawRect(theX, 0, 5 +random, this.stage.stageHeight / 2);
+			this.graphics.endFill();
+			theX += random;
+		}
+}}}
+http://farm4.static.flickr.com/3115/3205430793_de067cf6b4_o.jpg

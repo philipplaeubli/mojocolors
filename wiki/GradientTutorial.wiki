@@ -7,6 +7,7 @@ Sometimes this is not enough, especially when creating multiple sprites or other
 mojocolors can help you. In this tutorial you will learn how to create a gradient and how you can easily loop through all the colors in the ColorWheel.
 
 === Step One - Create the Colors ===
+This is easy, just use the rgb values. The range is from 0-255, just as you are used to it from tools like Photoshop or Kuler. You can also create a color from RGB hex values with the static method {{{ch.badmojo.color.Color.getHex(hex : uint):}}}.
 
 {{{
 
@@ -19,6 +20,7 @@ mojocolors can help you. In this tutorial you will learn how to create a gradien
 }}}
 
 === Step Two - Create the Gradient ===
+Not really difficult. You by adding a number to the arguments ({{blue.gradientTo(orange, 20);}}} you can define how many steps the gradient should have.
 
 {{{			
 //	you can now use the .gradient method on color to create a gradient. A
@@ -28,7 +30,7 @@ mojocolors can help you. In this tutorial you will learn how to create a gradien
 }}}
 
 === Step Three - The Loop ===
-
+The cool thing about the ColorWheel object is, that you do not have to access the colors with an index like in array (although you can if you want by using the {{{getAsList}}} method. Each time you use the {{{getColor}}} method, the ColorWheel switches to the next color in the list. If the the ColorWheel reaches the end of the list, it starts at the beginning.  
 {{{
 //      now we paint rectangles for each color in the wheel.
 //      you do not have to access a color in the colorwheel by an index. If 

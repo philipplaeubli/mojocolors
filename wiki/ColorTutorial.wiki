@@ -45,8 +45,8 @@ We now make a ColorSprite object for each color in the wheel, pass the color to 
 === Step Four - The ColorSprite Class ===
 The ColorSprite class is a normal object that extends Sprite. It does three things:
   * The height of the rectangle that is drawn depends on the brightness of the color
-  * On MouseOver it brightens the color and adds saturation to it.
-  * On MouseUp / Click it changes the hue of the color by ninety degree.
+  * On a mouseOver event it brightens the color and adds saturation to it.
+  * On a mouseUp / click event it changes the hue of the color by ninety degree.
  
 The constructor:
 {{{

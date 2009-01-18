@@ -6,8 +6,9 @@ When using the mojocolors Color object, you can dynamically generate colors and 
 
 In this tutorial we create a swf that contains ten rectangle, each filled with a variation of an initial color. the rectangles interact on the mouse events and change their color. 
 
-See the final swf [http://badmojo.ch/mojocolors/examples/001/001Color.html here]
 http://farm4.static.flickr.com/3413/3205697659_125ee5c019_m.jpg
+See the final swf [http://badmojo.ch/mojocolors/examples/001/001Color.html here]
+
 
 ===Step One - Create the Color ===
 Nothing as easy as this:

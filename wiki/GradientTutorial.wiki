@@ -1,5 +1,5 @@
 #summary This tutorial shows how to use the gradientTo method.
-#labels Tutorial,Gradients
+#labels Tutorial,Gradients,Featured
 
 = Gradients =
 While ActionScript has tools that offer the creation of gradients, they are mostly limited to the scope of the {{{flash.display.Graphics}}} object.

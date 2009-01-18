@@ -4,11 +4,11 @@
 = Release Notes =
 
 == planned for the next release: ==
-  * sort by hue
-  * sort by saturation
   * Tutorials (at least two)
 
 === already finished ===
+  * sort by hue
+  * sort by saturation
   * Bugfixes (blend colors)
   * added length method to ColorWheel
   * added a Tutorial for Gradients.

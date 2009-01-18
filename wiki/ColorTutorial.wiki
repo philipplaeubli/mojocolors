@@ -1,5 +1,5 @@
 #summary This tutorial shows you how you can use the color object.
-#labels Tutorial,Color
+#labels Tutorial,Color,Featured
 
 = Colors =
 When using the mojocolors Color object, you can dynamically generate colors and modify them and apply some color theory to them. this helps you building nicer applications, because you can easily create multiple shades of one color with one line of code.

@@ -6,6 +6,14 @@
 == planned for the next release: ==
   * sort by hue
   * sort by saturation
+=== already finished ===
+- Bugfixes (blend colors)
+- added lenght method on ColorWheel
+- added a Tutorial for Gradients.
+
+=== work in progress ===
+- ASDoc
+- sorting methods.
 
 == 0.0.3 ==
   * Gradients: by calling `color.gradient(otherColor, steps);` you create a `ColorWheel` with all colors that form a gradient from the color to the otherColor object.

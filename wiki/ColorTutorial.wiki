@@ -107,5 +107,5 @@ http://farm4.static.flickr.com/3413/3205697659_125ee5c019_m.jpg
 Click [[http://badmojo.ch/mojocolors/examples/001/001Color.html here]] to see the result.
 
 You can download the source files:
-  *[http://code.google.com/p/mojocolors/source/browse/trunk/mojocolors/demos/ch/badmojo/color/ColorTutorial001.as Main Class]
+  *[http://code.google.com/p/mojocolors/source/browse/trunk/mojocolors/demos/ch/badmojo/color/ColorTutorial001.as MainClass]
   * [http://code.google.com/p/mojocolors/source/browse/trunk/mojocolors/demos/ch/badmojo/color/tutorial/ColorSprite.as ColorSprite]

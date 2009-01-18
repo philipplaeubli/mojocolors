@@ -1,4 +1,5 @@
 #summary This tutorial shows how to use the gradientTo method.
+#labels Tutorial,Gradients
 
 = Gradients =
 While ActionScript has tools that offer the creation of gradients, they are mostly limited to the scope of the {{{flash.display.Graphics}}} object.
@@ -30,7 +31,7 @@ Not really difficult. You by adding a number to the arguments ({{blue.gradientTo
 }}}
 
 === Step Three - The Loop ===
-The cool thing about the ColorWheel object is, that you do not have to access the colors with an index like in array (although you can if you want by using the {{{getAsList}}} method. Each time you use the {{{getColor}}} method, the ColorWheel switches to the next color in the list. If the the ColorWheel reaches the end of the list, it starts at the beginning.  
+The cool thing about the ColorWheel object is, that you do not have to access the colors with an index like in an array (although you can if you want by using the {{{getAsList}}} method. Each time you use the {{{getColor}}} method, the ColorWheel jumps to the next color in the list. If the the ColorWheel reaches the end of the list, it starts at the beginning.  
 {{{
 //      now we paint rectangles for each color in the wheel.
 //      you do not have to access a color in the colorwheel by an index. If 

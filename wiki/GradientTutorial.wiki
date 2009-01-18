@@ -2,6 +2,7 @@
 #labels Tutorial,Gradients,Featured
 
 = Gradients =
+http://farm4.static.flickr.com/3078/3206267732_4aba3de7af_o.jpg<br>
 While ActionScript has tools that offer the creation of gradients, they are mostly limited to the scope of the {{{flash.display.Graphics}}} object.
 Sometimes this is not enough, especially when creating multiple sprites or other interactive objects where the gradient should span across them.
 

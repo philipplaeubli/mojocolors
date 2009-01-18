@@ -60,7 +60,7 @@ The constructor:
 		redraw(_color);
 		
 		// add the listeners.
-			addEventListener(MouseEvent.MOUSE_OVER, onOver);
+		addEventListener(MouseEvent.MOUSE_OVER, onOver);
 		addEventListener(MouseEvent.MOUSE_OUT, onOutOrUp);
 		addEventListener(MouseEvent.MOUSE_DOWN, onDown);
 		addEventListener(MouseEvent.MOUSE_UP, onUp);

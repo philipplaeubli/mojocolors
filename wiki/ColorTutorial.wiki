@@ -83,7 +83,7 @@ The draw method, here we handle the individual height of a ColorSprite:
 	
 }}}
 
-The Event handling: On a mouse Over, we make a copy of the color, add saturation and brightness and then draw the rectangle again. It is important to copy the color because otherwise the original color would change on every mouseEvent and thus could influence the appearance and height of the ColorSprite:
+The Event handling: On a mouseOver event, we make a copy of the color, add saturation and brightness and then draw the rectangle again. It is important to copy the color because otherwise the original color would change on every mouseEvent and thus could influence the appearance and height of the ColorSprite:
 {{{
 	private function onOver(event : MouseEvent) : void {
 		// redraw the shape. While the mouse is over this shape, we draw it a

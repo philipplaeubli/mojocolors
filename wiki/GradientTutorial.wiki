@@ -5,6 +5,8 @@
 While ActionScript has tools that offer the creation of gradients, they are mostly limited to the scope of the {{{flash.display.Graphics}}} object.
 Sometimes this is not enough, especially when creating multiple sprites or other interactive objects where the gradient should span across them.
 
+Get the ActionScript file [http://code.google.com/p/mojocolors/source/browse/trunk/mojocolors/demos/ch/badmojo/color/GradientTutorial.as here]
+
 mojocolors can help you. In this tutorial you will learn how to create a gradient and how you can easily loop through all the colors in the ColorWheel.
 
 === Step One - Create the Colors ===

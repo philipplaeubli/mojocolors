@@ -10,7 +10,7 @@
 
 === already finished ===
   * Bugfixes (blend colors)
-  * added lenght method on ColorWheel
+  * added length method to ColorWheel
   * added a Tutorial for Gradients.
 
 === work in progress ===

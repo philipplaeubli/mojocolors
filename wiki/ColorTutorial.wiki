@@ -9,4 +9,75 @@ In this tutorial we create a swf that contains ten rectangle, each filled with a
 See the final swf [http://badmojo.ch/mojocolors/examples/001/001Color.html here]
 http://farm4.static.flickr.com/3413/3205697659_125ee5c019_m.jpg
 
-===Step One - Your Main Class ===
+===Step One - Create the Color ===
+Nothing as easy as this:
+{{{
+	// create a red color
+	var color : Color = new Color(142, 27, 19);
+}}}
+
+===Step Two - Create a ColorWheel ==
+The Color class has various _to..._ methods, that allow you instantly create a list of colors that differ from the original color by certain criterias. Most of them are easy to understand and clear in their meaning.
+
+{{{
+
+	// create a ColorWheel with ten warm variations of that color; Make
+	// those colors darker, so that we can brighten them up later with  
+	// mouse events.
+	var wheel : ColorWheel = color.toWarm(10);
+	wheel.darken(20);
+	wheel.deSaturate(20);
+
+}}}
+
+===Step Three - Loop ===
+We now make a ColorSprite object for each color in the wheel, pass the color to the new object and place it on the screen.
+{{{
+	// loop through the colors and create a ColorSprite for each color.
+	for (var i : int = 0;i < wheel.length(); i++) {
+		var sprite : Sprite = new ColorSprite(wheel.getColor());
+		sprite.y = this.height;
+		addChild(sprite);	
+	}
+}}}
+
+=== Step Four - The ColorSprite Class ===
+The ColorSprite class is a normal object that extends Sprite. It does three things:
+  * The height of the rectangle that is drawn depends on the brightness of the color
+  * On MouseOver it brightens the color and adds saturation to it.
+  * On MouseUp / Click it changes the hue of the color by ninety degree.
+ 
+The constructor:
+{{{
+	private var _color : Color;
+
+	public function ColorSprite(color : Color) {
+		// assign the color to a field.
+		_color = color;
+		
+		// draw the shape
+		redraw(_color);
+		
+		// add the listeners.
+			addEventListener(MouseEvent.MOUSE_OVER, onOver);
+		addEventListener(MouseEvent.MOUSE_OUT, onOutOrUp);
+		addEventListener(MouseEvent.MOUSE_DOWN, onDown);
+		addEventListener(MouseEvent.MOUSE_UP, onUp);
+	}
+}}}
+
+
+The draw method, here we handle the individual height of a ColorSprite:
+{{{
+	private function redraw(color : Color) : void {
+
+		graphics.clear();
+		graphics.beginFill(color.getHex());
+
+		// the properties of the Color object can influence the size of the 
+		// ColorSprite. Darker ColorSprites are now bigger than brighter. 
+		graphics.drawRect(0, 0, 200, (Math.pow(100 - _color.getBrightness(), 2) / 100 ));
+		graphics.endFill();
+	}
+	
+}}}

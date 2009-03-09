@@ -1,0 +1,1 @@
+/** *		Bachelor of Arts in Design - Interaction Design, 3. Semester *		IAD, Interaction Design, Zurich University of the Arts * 		Copyright (c) 2009 Philipp Laeubli, All Rights Reserved. */package mx.core {	import flash.display.Bitmap;			/**	 * @author phil	 */	public class BitmapAsset extends Bitmap {	}}

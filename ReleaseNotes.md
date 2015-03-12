@@ -1,0 +1,23 @@
+# Release Notes #
+
+## planned for the next release: ##
+  * ASDoc
+
+
+## 0.0.4 ##
+  * Tutorials
+  * sort by hue
+  * sort by saturation
+  * Bugfixes (blend colors)
+  * added length method to ColorWheel
+  * added a Tutorial for Gradients.
+
+## 0.0.3 ##
+  * Gradients: by calling `color.gradient(otherColor, steps);` you create a `ColorWheel` with all colors that form a gradient from the color to the otherColor object.
+  * Rotate To: by calling `color.rotateTo(otherColor, steps, flipped) you create a gradient that does not directly fade to the other color, but rotates the hue through the rgb color wheel.
+
+## 0.0.2 ##
+Added correct license, documentation, created examples, added some build scripts
+
+## 0.0.1 ##
+Initial release
